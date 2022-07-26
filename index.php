@@ -22,7 +22,7 @@
 
                 <div class="card"> 
                     <div class="img-container">
-                        <img src="<?php echo $album['poster'] ?>" :alt="<?php echo $album['title'] ?>">
+                        <img src="<?php echo $album['poster'] ?>" alt="<?php echo $album['title'] ?>">
                     </div>
                     <h3>
                         <?php echo $album['title'] ?>

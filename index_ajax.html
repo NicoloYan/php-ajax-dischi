@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <title>php dischi</title>
+</head>
+<body>
+    <div id="app">
+
+        <header>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="logo spotify">
+            </div>
+        </header>
+        <main>
+            <div class="cards_wrapper">
+    
+                <div v-for="album in albums" class="card"> 
+                    <div class="img-container">
+                        <img :src="album.poster" :alt="album.title">
+                    </div>
+                    <h3>
+                        {{ album.title }}
+                    </h3>
+                    <div class="author">
+                        {{ album.author }}
+                    </div>
+                    <div class="year">
+                        {{ album.year }}
+                    </div>
+                </div>
+    
+            </div>
+        </main>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
