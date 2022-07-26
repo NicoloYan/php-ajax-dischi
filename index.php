@@ -20,7 +20,7 @@
 
             <?php foreach($albums as $album) { ?>
 
-                <div class="card">
+                <div class="card"> 
                     <div class="img-container">
                         <img src="<?php echo $album['poster'] ?>" :alt="<?php echo $album['title'] ?>">
                     </div>
